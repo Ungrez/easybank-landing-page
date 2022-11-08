@@ -1,0 +1,79 @@
+@import "../variables";
+#footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-blue;
+  padding: 30px;
+  &_logo {
+    background-image: url("../../imgs/logo-footer.svg");
+    background-repeat: no-repeat;
+    background-size: 43%;
+    height: 50px;
+    width: 100%;
+    background-position: center;
+  }
+  &_social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 50px;
+    height: 90px;
+    gap: 5px;
+    & .icon {
+      height: 30px;
+      width: 30px;
+      flex-basis: 15%;
+      background-repeat: no-repeat;
+      background-size: 70%;
+      background-position: center;
+      cursor: pointer;
+    }
+
+    &_facebook {
+      background-image: url("../../imgs/icon-facebook.svg");
+    }
+    &_youtube {
+      background-image: url("../../imgs/icon-youtube.svg");
+    }
+    &_twitter {
+      background-image: url("../../imgs/icon-twitter.svg");
+    }
+    &_pinterest {
+      background-image: url("../../imgs/icon-pinterest.svg");
+    }
+    &_instagram {
+      background-image: url("../../imgs/icon-instagram.svg");
+    }
+  }
+  &_nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    color: $very-light-gray;
+    font-weight: 300;
+    gap: 20px;
+  }
+  &_button {
+    color: $white;
+    border: none;
+    margin: 40px 0 30px;
+    width: 55%;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 18px 25px;
+    align-self: center;
+    font-size: 16px;
+    background: linear-gradient(90deg, $lime-green 0%, $bright-cyan 100%);
+    transition: 0.4s;
+    cursor: pointer;
+    &:hover {
+      opacity: 1.5;
+    }
+  }
+  &_copy {
+    text-align: center;
+    color: $grayish-blue;
+    margin-bottom: 30px;
+  }
+}
