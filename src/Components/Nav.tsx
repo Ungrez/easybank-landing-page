@@ -24,6 +24,7 @@ const Nav = () => {
         id="nav_hamburger"
         className={showNav ? "active" : ""}
       ></div>
+      <button>Request Invite</button>
     </nav>
   );
 };

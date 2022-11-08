@@ -31,11 +31,10 @@
     padding: 0 20px;
     gap: 20px;
     &_img {
-      background-image: url("../../imgs/icon-online.svg");
-      height: 100px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 22%;
+      height: 80px;
+      width: 80px;
+      align-self: center;
+      margin: 10px 0;
     }
     & p:nth-child(2) {
       color: $dark-blue;
@@ -45,15 +44,6 @@
       color: $grayish-blue;
       font-size: 16px;
       line-height: 1.8;
-    }
-    &:nth-child(3) #about_box_img {
-      background-image: url("../../imgs/icon-budgeting.svg");
-    }
-    &:nth-child(4) #about_box_img {
-      background-image: url("../../imgs/icon-onboarding.svg");
-    }
-    &:nth-child(5) #about_box_img {
-      background-image: url("../../imgs/icon-api.svg");
     }
   }
 }

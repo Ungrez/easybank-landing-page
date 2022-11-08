@@ -5,44 +5,20 @@
   background-color: $dark-blue;
   padding: 30px;
   &_logo {
-    background-image: url("../../imgs/logo-footer.svg");
-    background-repeat: no-repeat;
-    background-size: 43%;
-    height: 50px;
-    width: 100%;
-    background-position: center;
+    padding: 10px 90px 20px;
   }
   &_social {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 20px 50px;
-    height: 90px;
-    gap: 5px;
-    & .icon {
-      height: 30px;
-      width: 30px;
-      flex-basis: 15%;
-      background-repeat: no-repeat;
-      background-size: 70%;
-      background-position: center;
-      cursor: pointer;
-    }
-
-    &_facebook {
-      background-image: url("../../imgs/icon-facebook.svg");
-    }
-    &_youtube {
-      background-image: url("../../imgs/icon-youtube.svg");
-    }
-    &_twitter {
-      background-image: url("../../imgs/icon-twitter.svg");
-    }
-    &_pinterest {
-      background-image: url("../../imgs/icon-pinterest.svg");
-    }
-    &_instagram {
-      background-image: url("../../imgs/icon-instagram.svg");
+    gap: 10px;
+    & img {
+      height: 27px;
+      &:hover {
+        filter: invert(67%) sepia(48%) saturate(682%) hue-rotate(81deg)
+          brightness(180%) contrast(91%);
+      }
     }
   }
   &_nav {
@@ -53,6 +29,9 @@
     color: $very-light-gray;
     font-weight: 300;
     gap: 20px;
+    & li:hover {
+      color: $lime-green;
+    }
   }
   &_button {
     color: $white;
@@ -68,7 +47,7 @@
     transition: 0.4s;
     cursor: pointer;
     &:hover {
-      opacity: 1.5;
+      filter: brightness(130%);
     }
   }
   &_copy {

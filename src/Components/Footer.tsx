@@ -1,14 +1,51 @@
 import "../sass/ComponentsStyles/Footer.scss";
+import IconFB from "../imgs/icon-facebook.svg";
+import IconYT from "../imgs/icon-youtube.svg";
+import IconTwitter from "../imgs/icon-twitter.svg";
+import IconPint from "../imgs/icon-pinterest.svg";
+import IconIG from "../imgs/icon-instagram.svg";
+import FooterLogo from "../imgs/logo-footer.svg";
+
 const Footer = () => {
   return (
     <footer id="footer">
-      <div id="footer_logo"></div>
+      <img
+        id="footer_logo"
+        src={FooterLogo}
+        alt="logo"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      />
       <div id="footer_social">
-        <div id="footer_social_facebook" className="icon"></div>
-        <div id="footer_social_youtube" className="icon"></div>
-        <div id="footer_social_twitter" className="icon"></div>
-        <div id="footer_social_pinterest" className="icon"></div>
-        <div id="footer_social_instagram" className="icon"></div>
+        <img
+          src={IconFB}
+          id="footer_social_facebook"
+          className="icon"
+          alt="facebook_icon"
+        />
+        <img
+          src={IconYT}
+          id="footer_social_youtube"
+          className="icon"
+          alt="youtube_icon"
+        />
+        <img
+          src={IconTwitter}
+          id="footer_social_twitter"
+          className="icon"
+          alt="twitter_icon"
+        />
+        <img
+          src={IconIG}
+          id="footer_social_pinterest"
+          className="icon"
+          alt="pinterest_icon"
+        />
+        <img
+          src={IconPint}
+          id="footer_social_instagram"
+          className="icon"
+          alt="instagram_icon"
+        />
       </div>
       <ul id="footer_nav">
         <li>About Us</li>

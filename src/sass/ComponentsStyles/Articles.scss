@@ -39,6 +39,9 @@
       & #article_title {
         font-size: 18px;
         color: $dark-blue;
+        &:hover {
+          color: $lime-green;
+        }
       }
       & #article_desc {
         font-size: 15px;
