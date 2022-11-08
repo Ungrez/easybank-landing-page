@@ -1,0 +1,59 @@
+@import "../variables";
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+  &_images {
+    position: relative;
+    background-image: url("../../imgs/bg-intro-mobile.svg");
+    flex-basis: 65%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &_phones {
+      position: absolute;
+      background-image: url("../../imgs/image-mockups.png");
+      background-position: center;
+      background-position-y: -7.2vh;
+      top: 0;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      background-size: 90%;
+      background-repeat: no-repeat;
+    }
+  }
+  &_text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: 45%;
+    padding: 0 35px;
+    gap: 20px;
+    & p:nth-child(1) {
+      font-size: 42px;
+      color: $dark-blue;
+    }
+    & p:nth-child(2) {
+      font-size: 16px;
+      color: $grayish-blue;
+      line-height: 1.6;
+    }
+    & button {
+      color: $white;
+      border: none;
+      margin-top: 10px;
+      width: 55%;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 15px 25px;
+      align-self: center;
+      font-size: 16px;
+      background: linear-gradient(90deg, $lime-green 0%, $bright-cyan 100%);
+      transition: 0.4s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

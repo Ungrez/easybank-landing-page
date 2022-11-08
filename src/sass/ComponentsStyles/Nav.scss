@@ -22,7 +22,7 @@
     height: calc(100vh - 7.5vh);
     margin-top: 7.5vh;
     width: 100%;
-    z-index: -1;
+    display: none;
     position: fixed;
     background-color: rgba(45, 47, 63, 0.3);
     transition: 0.2s;
@@ -41,8 +41,8 @@
       border-radius: 5px;
     }
     &.active {
-      z-index: 1;
       opacity: 1;
+      display: block;
     }
   }
   &_hamburger {
