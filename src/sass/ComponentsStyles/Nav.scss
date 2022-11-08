@@ -1,4 +1,62 @@
-nav {
-  height: 9vh;
+@import "../variables";
+#nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: $white;
+  height: 7.5vh;
   width: 100%;
+  box-shadow: 0 0 10px -5px black;
+  transition: 0.5s;
+  z-index: 2;
+  &_logo {
+    height: 100%;
+    background-image: url("../../imgs/logo.svg");
+    background-repeat: no-repeat;
+    width: 50%;
+    background-position: center;
+    background-size: 75%;
+  }
+  &_links {
+    opacity: 0;
+    height: calc(100vh - 7.5vh);
+    margin-top: 7.5vh;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    background-color: rgba(45, 47, 63, 0.3);
+    transition: 0.2s;
+    & ul {
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 35vh;
+      padding: 10px 0;
+      width: 87%;
+      list-style: none;
+      margin: 3vh auto;
+      background-color: $white;
+      text-align: center;
+      border-radius: 5px;
+    }
+    &.active {
+      z-index: 1;
+      opacity: 1;
+    }
+  }
+  &_hamburger {
+    height: 100%;
+    background-image: url("../../imgs/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    width: 10%;
+    background-position: center;
+    background-size: 80%;
+    margin-right: 25px;
+    transition: 0.3s;
+    &.active {
+      background-image: url("../../imgs/icon-close.svg");
+      background-size: 50%;
+    }
+  }
 }

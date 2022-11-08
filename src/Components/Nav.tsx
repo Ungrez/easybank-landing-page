@@ -1,10 +1,29 @@
 import "../sass/ComponentsStyles/Nav.scss";
-import logo from "../images/logo.svg";
+import { useState } from "react";
 
 const Nav = () => {
+  const [showNav, setNav] = useState<boolean>(false);
+
+  const handleOpenMenu = () => {
+    setNav(!showNav);
+  };
   return (
     <nav id="nav">
-      <img id="nav_logo" src="../images/logo.svg" alt="logo" />
+      <div id="nav_logo"></div>
+      <div id="nav_links" className={showNav ? "active" : ""}>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div
+        onClick={handleOpenMenu}
+        id="nav_hamburger"
+        className={showNav ? "active" : ""}
+      ></div>
     </nav>
   );
 };
